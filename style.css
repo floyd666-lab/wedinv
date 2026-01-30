@@ -1,68 +1,48 @@
+* { box-sizing: border-box; }
+
 body {
   margin: 0;
   font-family: Inter, sans-serif;
   background: #6f0f1c;
-  color: #333;
 }
 
 .hero {
   height: 100vh;
   background:
-    linear-gradient(to bottom, rgba(0,0,0,0) 40%, #6f0f1c 75%),
-    url("images/hero.jpg") center/cover no-repeat;
+    linear-gradient(to bottom, rgba(0,0,0,0) 40%, #6f0f1c 80%),
+    url("../images/hero.jpg") center/cover no-repeat;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .hero-content {
-  text-align: center;
   color: white;
+  text-align: center;
+  padding: 20px;
 }
 
-.hero h1 {
+h1 {
   font-family: Playfair Display;
-  font-size: 48px;
-}
-
-.date {
-  font-size: 20px;
-}
-
-.timer {
-  margin-top: 20px;
-  font-size: 18px;
+  font-size: 42px;
 }
 
 .card {
   background: #fbf6f2;
-  margin: 30px auto;
-  padding: 30px;
-  max-width: 700px;
-  border-radius: 22px;
+  margin: 30px 16px;
+  padding: 26px;
+  border-radius: 24px;
   box-shadow: 0 15px 40px rgba(0,0,0,.2);
-  text-align: center;
 }
 
 .divider {
   text-align: center;
   font-size: 26px;
   color: gold;
-  margin: 20px 0;
 }
 
-.toggle-content {
-  display: none;
-}
-
-.toggle.open .toggle-content {
-  display: block;
-}
-
-.story-photos img {
-  width: 45%;
-  border-radius: 16px;
-}
+.toggle-content { display: none; }
+.toggle.open .toggle-content { display: block; }
 
 .couple {
   display: flex;
@@ -70,42 +50,39 @@ body {
 }
 
 .person img {
-  width: 160px;
-  height: 160px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   transition: transform .4s;
 }
 
 .person img:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
 .colors span {
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   display: inline-block;
-  margin: 8px;
+  margin: 6px;
 }
 
 iframe {
   width: 100%;
-  height: 300px;
+  height: 260px;
   border: none;
+  border-radius: 16px;
 }
 
-input, textarea {
-  width: 100%;
-  padding: 12px;
-  margin: 8px 0;
-  border-radius: 12px;
-  border: 1px solid #ccc;
-}
-
-button {
-  background: #6f0f1c;
-  color: white;
-  padding: 12px 30px;
-  border-radius: 20px;
+#musicBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: gold;
   border: none;
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  font-size: 22px;
 }
