@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Марсель & Рухсора</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Марсель & Рухсора</h1>
+    <p>Будем рады, если вы разделите этот день с нами!</p>
+    <span class="date">11 апреля 2026</span>
+
+    <div class="timer" id="timer"></div>
+  </div>
+</section>
+
+<div class="divider">❤</div>
+
+<!-- НАША ИСТОРИЯ -->
+<section class="card toggle">
+  <h2 class="toggle-title">Наша история</h2>
+  <div class="toggle-content">
+    <p>
+      Наше знакомство началось совершенно неожиданно…
+      Здесь будет ваш тёплый, личный текст о любви и судьбе 💫
+    </p>
+    <div class="story-photos">
+      <img src="images/story1.jpg">
+      <img src="images/story2.jpg">
+    </div>
+  </div>
+</section>
+
+<div class="divider">❤</div>
+
+<!-- ЖЕНИХ И НЕВЕСТА -->
+<section class="card couple">
+  <div class="person">
+    <img src="images/marcel.jpg">
+    <h3>Марсель</h3>
+    <span>Жених</span>
+  </div>
+  <div class="person">
+    <img src="images/rukhsora.jpg">
+    <h3>Рухсора</h3>
+    <span>Невеста</span>
+  </div>
+</section>
+
+<div class="divider">❤</div>
+
+<!-- ПОДАРКИ -->
+<section class="card">
+  <h2>Пожелания по подаркам</h2>
+  <p>
+    Самый ценный подарок для нас — ваше присутствие.
+    Просим воздержаться от живых цветов 🤍
+  </p>
+</section>
+
+<div class="divider">❤</div>
+
+<!-- DRESS CODE -->
+<section class="card">
+  <h2>Dress Code</h2>
+  <p>Будем благодарны, если вы придержитесь этой палитры:</p>
+  <div class="colors">
+    <span style="background:#F6F1ED"></span>
+    <span style="background:#EFE2CE"></span>
+    <span style="background:#CDA4AA"></span>
+    <span style="background:#8B7C6F"></span>
+    <span style="background:#6F0F1C"></span>
+  </div>
+</section>
+
+<div class="divider">❤</div>
+
+<!-- РАСПИСАНИЕ -->
+<section class="card">
+  <h2>Расписание</h2>
+  <ul class="schedule">
+    <li>18:00 — Сбор гостей</li>
+    <li>19:00 — Начало банкета</li>
+    <li>20:00 — MilanBand</li>
+    <li>21:00 — Танец молодых</li>
+    <li>22:00 — Дискотека</li>
+    <li>23:00 — Завершение</li>
+  </ul>
+</section>
+
+<div class="divider">❤</div>
+
+<!-- КАРТА -->
+<section class="card">
+  <h2>Как нас найти</h2>
+  <p>Tashkent · Ресторан «Diamond Hall»</p>
+  <iframe
+    src="https://www.google.com/maps?q=Diamond%20Hall%20Tashkent&output=embed"
+    loading="lazy"></iframe>
+</section>
+
+<div class="divider">❤</div>
+
+<!-- RSVP -->
+<section class="card">
+  <h2>RSVP</h2>
+  <form id="rsvp-form">
+    <input name="name" placeholder="Ваше имя" required>
+    <textarea name="message" placeholder="Комментарий / пожелание"></textarea>
+    <button type="submit">Отправить</button>
+  </form>
+  <p id="form-status"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
